@@ -1,0 +1,129 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/linearlayout"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:background="#227093"
+android:fadingEdge="horizontal"
+android:orientation="vertical">
+
+<!-- Text view for BMI Text -->
+<TextView
+    android:id="@+id/tv1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:text="BMI"
+    android:textAllCaps="true"
+    android:textAppearance="@android:style/TextAppearance.Material.Headline"
+    android:textColor="@android:color/background_light"
+    android:textSize="46sp"
+    android:fontFamily="serif"
+    android:textStyle="bold" />
+
+<!-- Textview for calculator text -->
+<TextView
+    android:id="@+id/tv2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:text="Calculator"
+    android:textColor="@android:color/white"
+    android:textSize="20dp"
+    android:textStyle="bold" />
+
+<!-- Textview for WEIGHT(KG) text -->
+<TextView
+    android:id="@+id/tv3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:paddingTop="30dp"
+    android:text="WEIGHT (KG)"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:textColor="#76FF03"
+    android:textStyle="bold|italic"
+    android:typeface="serif" />
+
+<!-- Edit text for entering weight with hint in kgs -->
+<EditText
+    android:id="@+id/et1"
+    android:layout_width="96dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:ems="10"
+    android:fadingEdgeLength="10dp"
+    android:hint="IN KGs"
+    android:inputType="numberDecimal"
+    android:textAlignment="center"
+    android:textColor="#FFFF00"
+    android:textColorHint="#FFFF00">
+
+    <requestFocus />
+</EditText>
+
+<!-- Text view for HEIGHT(CM)text -->
+<TextView
+    android:id="@+id/tv4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:paddingTop="30dp"
+    android:text="HEIGHT (CM)"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:textColor="#76FF03"
+    android:textStyle="bold|italic"
+    android:typeface="serif" />
+
+<!-- Edit text for entering height with hint in cm -->
+<EditText
+    android:id="@+id/et2"
+    android:layout_width="96dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:ems="10"
+    android:hint="IN CMs"
+    android:inputType="numberDecimal"
+    android:textColor="#FFFF00"
+    android:textColorHint="#FFFF00"></EditText>
+
+<!-- Button for calculating the formula, when pressed, with calculate written over it -->
+<Button
+    android:id="@+id/ib1"
+    android:layout_width="158dp"
+    android:layout_height="51dp"
+    android:layout_gravity="center"
+    android:layout_marginTop="20dp"
+    android:background="@drawable/button_background"
+    android:fadingEdge="vertical"
+    android:longClickable="true"
+    android:nextFocusRight="@color/colorPrimary"
+    android:text="Calculate"
+    android:visibility="visible" />
+
+<!-- Text view for showing result -->
+<TextView
+    android:id="@+id/tv5"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:paddingTop="20dp"
+    android:text=""
+    android:textColor="#FFFF00"
+    android:textSize="20dp"
+    android:textStyle="bold" />
+<Button
+    android:id="@+id/ib2"
+    android:layout_width="158dp"
+    android:layout_height="51dp"
+    android:layout_gravity="center"
+    android:layout_marginTop="20dp"
+    android:background="@drawable/button_background"
+    android:fadingEdge="vertical"
+    android:longClickable="true"
+    android:nextFocusRight="@color/colorPrimary"
+    android:text="Get my Diet plan"
+    android:visibility="visible" />
+
+</LinearLayout>
+    <!-- Linear layout ends here -->
